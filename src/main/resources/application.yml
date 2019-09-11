@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://cdb-ekhf1dds.bj.tencentcdb.com:10192/mini_server?serverTimezone=Asia/Shanghai&useUnicoding=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: cai1348870256
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.hthj.mini.pojo
