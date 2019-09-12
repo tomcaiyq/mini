@@ -12,5 +12,4 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   type-aliases-package: com.hthj.mini.pojo
-
 # 更新东西了
