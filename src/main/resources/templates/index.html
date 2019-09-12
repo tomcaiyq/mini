@@ -2,11 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.css}">
     <link rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <script th:src="@{/bootstrap/js/jquery.js}"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.js}"></script>
     <title>tomcai的个人小屋</title>
 </head>
-<body style="background: bisque">
-    <div class="container">这里是tomcai的小屋，网站正在慢慢的成长哦。。。</div>
+<body>
+<nav th:replace="~{common :: header}"></nav>
 </body>
 </html>
