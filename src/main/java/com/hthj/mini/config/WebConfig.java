@@ -6,6 +6,10 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by Admin
  * Date 2019/9/11 23:11
@@ -23,7 +27,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new VisitorInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(new VisitorInterceptor()).addPathPatterns("/", "/index.html");
     }
-    
+
 }
