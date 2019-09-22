@@ -8,6 +8,7 @@ spring:
     username: root
     password: cai1348870256
 
+
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
