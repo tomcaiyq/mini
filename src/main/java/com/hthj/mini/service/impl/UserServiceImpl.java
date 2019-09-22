@@ -20,9 +20,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public Result<List<User>> getUser() {
         List<User> users = userDao.select();
-        User user = users.get(0);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        System.out.println(sdf.format(user.getBirthday()));
-        return new Result<>(Constant.SUCCESS_CODE, Constant.SUCCESS_MSG, userDao.select());
+        return new Result<>(Constant.SUCCESS_CODE, Constant.SUCCESS_MSG, users);
     }
 }
