@@ -13,14 +13,12 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public Object exceptionHandler(HttpServletRequest request, HttpServletResponse response, Exception e) {
         ModelAndView modelAndView = new ModelAndView();
-        System.out.println("advice");
         if (response.getStatus() == 404) {
             modelAndView.setViewName("404");
             modelAndView.addObject("requestUrl", request.getRequestURI());
-            return modelAndView;
         } else {
             modelAndView.setViewName("500");
-            return modelAndView;
         }
+        return modelAndView;
     }
 }
